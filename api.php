@@ -11,7 +11,7 @@
     $payment->installments = 1;
     $payment->payment_method_id = "visa";
     $payment->payer = array(
-      "email" => "larue.nienow@email.com"
+      "email" => "arlandelucas62@gmail.com"
     );
 
     $payment->save();
