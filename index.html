@@ -1,62 +1,72 @@
-<?php
-    session_start();
-    include_once('config.php');
-    // print_r($_SESSION);
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-    {
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
-        header('Location: index.php');
-    }
-    $logado = $_SESSION['email'];
-    if(!empty($_GET['search']))
-    {
-        $data = $_GET['search'];
-        $sql = "SELECT * FROM usuarios WHERE id LIKE '%$data%' or nome LIKE '%$data%' or email LIKE '%$data%' ORDER BY id DESC";
-    }
-    else
-    {
-        $sql = "SELECT * FROM usuarios ORDER BY id DESC";
-    }
-    $result = $conexao->query($sql);
-?>
-
-<!DOCTYPE html> 
-
-<!DOCTYPE html> 
-<html lang="en" dir="ltr">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title> Responsive Sidebar Menu  | Code4education </title>
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            //background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background:#DCDCDC;
+        }
+        div{
+            //background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #fff;
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            border-radius: 15px;
+        }
+        .inputSubmit{
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            
+        }
+        
+        .inputSubmit:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+        body a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+}
+    </style>
+</head>
 <body>
-  <div>
-    <p>Escolha um investimento para começar</p>
-  </div>
-  <br></br>
-  <div>
-    <a href="api.php"><img src="/img/logo.gif" alt="/img/logo.gif" width="120"></a>
-  </div>
+    <div>
+      <img src="/img/logo.gif" alt="logo" width="120">
+        
+        <form action="testLogin.php" method="POST">
+            <input type="text" name="email" placeholder="Email">
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+        </form>
+        <br><br>
+        <a href="Cadastre-se.php">Cadastre-se</a>
+        |
+        <a href="api.php">mercado</a>
+       
 </body>
 </html>
-<style>
-  body{
-    background: whitesmoke;
-  }
-  
-  p{
-    color: red;
-    font-size: large;
-    text-align: center;
-    
-  }
-  //a{
-    text-decoration: none;
-    color: black;
-  }
-  
-</style>
