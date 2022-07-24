@@ -1,6 +1,6 @@
 <?php
 
-    $dbHost = 'localhost.sql';
+    $dbHost = 'localhost';
     $dbUsername = 'epiz_30112446';
     $dbPassword = 'xgJUE7F2eeOS';
     $dbName = 'epiz_30112446_Tron1';
