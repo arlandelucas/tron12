@@ -3,7 +3,7 @@
     $dbHost = 'localhost';
     $dbUsername = 'epiz_30112446';
     $dbPassword = '';
-    $dbName = 'root';
+    $dbName = 'epiz_30112446_Tron1';
     
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
