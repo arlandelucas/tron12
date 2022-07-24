@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: sql302.byetcluster.com
--- Tempo de geração: 24/07/2022 às 03:16
--- Versão do servidor: 10.3.27-MariaDB
--- Versão do PHP: 7.2.22
+-- Host: localhost:3306
+-- Tempo de geração: 24/07/2022 às 21:50
+-- Versão do servidor: 5.7.36-cll-lve
+-- Versão do PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,47 +19,47 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `epiz_30112446_Tron1`
+-- Banco de dados: `t94veo1r_admin`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `Usuário`
+-- Estrutura para tabela `usuarios`
 --
 
 CREATE TABLE `usuarios` (
-  `Id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `Nome` text NOT NULL,
   `Email` text NOT NULL,
-  `Telefone` int(16) NOT NULL,
-  `Sexo` int(16) NOT NULL,
-  `Data de nascimento` int(16) NOT NULL,
-  `Cidade` int(16) NOT NULL,
-  `Estado` int(16) NOT NULL,
-  `Carteira` int(16) NOT NULL,
-  `Wallet` int(16) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `Telefone` text NOT NULL,
+  `genero` text NOT NULL,
+  `data_nascimento` text NOT NULL,
+  `Cidade` text NOT NULL,
+  `Estado` text NOT NULL,
+  `Carteira` int(10) NOT NULL,
+  `Wallet` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Índices de tabelas apagadas
+-- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `Usuário`
+-- Índices de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `Usuário`
+-- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
