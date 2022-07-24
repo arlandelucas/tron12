@@ -23,8 +23,8 @@
         include_once('config.php');
 
         //$nome = $_POST['nome'];
-        $email = $_POST['email'];
         $senha = $_POST['senha'];
+        $email = $_POST['email'];
         //$telefone = $_POST['telefone'];
         //$sexo = $_POST['genero'];
         //$data_nasc = $_POST['data_nascimento'];
