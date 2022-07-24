@@ -1,7 +1,7 @@
 <?php
 
-    $dbHost = 'localhost';
-    $dbUsername = 'epiz_30112446';
+    $dbHost = 'localhost.sql';
+    $dbUsername = 'root';
     $dbPassword = '';
     $dbName = 'epiz_30112446_Tron1';
     
