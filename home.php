@@ -20,9 +20,6 @@
     }
     $result = $conexao->query($sql);
 ?>
-
-<!DOCTYPE html> 
-
 <!DOCTYPE html> 
 <html lang="en" dir="ltr">
   <head>

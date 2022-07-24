@@ -37,7 +37,7 @@
         $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,sexo,data_nasc,cidade,estado,endereco,carteira,wallet) 
         VALUES ('$nome','$senha','$email','$telefone','$sexo','$data_nasc','$cidade','$estado','$endereco','$carteira','$wallet')");
 
-        header('Location: index.php');
+        header('Location: index.html');
     }
 
 ?>
@@ -163,7 +163,7 @@
 
         </form>
         <br><br>
-        <a href="index.php">Login</a>
+        <a href="index.html">Login</a>
     </div>
 </body>
 

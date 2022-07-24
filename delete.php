@@ -16,6 +16,6 @@
             $resultDelete = $conexao->query($sqlDelete);
         }
     }
-    header('Location: pages\index.php');
+    header('Location: pages\index.html');
    
 ?>

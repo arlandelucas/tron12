@@ -23,7 +23,7 @@
         {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
-            header('Location: index.php');
+            header('Location: index.html');
         }
         else
         {
@@ -35,6 +35,6 @@
     else
     {
         // Não acessa
-        header('Location: index.php');
+        header('Location: index.html');
     }
 ?>
