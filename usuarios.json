@@ -1,0 +1,9 @@
+[
+{"type":"header","version":"4.9.7","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"t94veo1r_admin"},
+{"type":"table","name":"usuarios","database":"t94veo1r_admin","data":
+[
+
+]
+}
+]
