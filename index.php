@@ -66,7 +66,7 @@
         <br><br>
         <a href="Cadastre-se.php">Cadastre-se</a>
         |
-        <a href="api.html">mercado</a>
+        <a href="api.html"></a>
        
 </body>
 </html>
